@@ -1,11 +1,82 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Prediction Result</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+
+    body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        background:linear-gradient(135deg,#11998e,#38ef7d);
+    }
+
+    .container{
+        background:white;
+        padding:40px;
+        border-radius:15px;
+        text-align:center;
+        box-shadow:0 10px 25px rgba(0,0,0,0.2);
+        max-width:500px;
+    }
+
+    .icon{
+        font-size:60px;
+    }
+
+    h1{
+        color:#27ae60;
+        margin:20px 0;
+    }
+
+    p{
+        color:#555;
+        line-height:1.6;
+        margin-bottom:20px;
+    }
+
+    .btn{
+        display:inline-block;
+        text-decoration:none;
+        background:#27ae60;
+        color:white;
+        padding:12px 25px;
+        border-radius:8px;
+        transition:0.3s;
+    }
+
+    .btn:hover{
+        background:#1e8449;
+    }
+</style>
+
 </head>
 <body>
-    <h1>You are not diabetic.</h1>
+
+
+<div class="container">
+    <div class="icon">✅</div>
+    <h1>No Diabetes Detected</h1>
+    <p>
+        Based on the provided health parameters, the model predicts that
+        you are not diabetic. Continue maintaining a healthy lifestyle
+        and regular health checkups.
+    </p>
+
+    <a href="/" class="btn">Check Again</a>
+</div>
+
+
 </body>
 </html>
